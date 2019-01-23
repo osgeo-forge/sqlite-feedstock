@@ -27,6 +27,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - make  # [not win]
+    - m2w64-tcl  # [win]
   host:
     - ncurses  # [not win]
     - readline  # [not win]
