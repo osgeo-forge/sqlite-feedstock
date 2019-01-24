@@ -13,11 +13,11 @@ package:
 source:
   url: https://www.sqlite.org/{{ year }}/sqlite-autoconf-{{ version_coded }}.tar.gz
   sha256: 5daa6a3fb7d1e8c767cd59c4ded8da6e4b00c61d3b466d0685e35c4dd6d7bf5d
-  patches:
-    - expose_symbols.patch  # [win]
+  # patches:
+  #   - expose_symbols.patch  # [win]
 
 build:
-  number: 1000
+  number: 1002
   run_exports:
     # sometimes adds new symbols.  Default behavior is OK.
     #    https://abi-laboratory.pro/tracker/timeline/sqlite/
